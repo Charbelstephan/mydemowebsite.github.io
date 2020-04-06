@@ -46,6 +46,7 @@ body {
 /* HEADER SECTION */
 #header {
   background-color: rgba(0, 0, 0, 0.75);
+  width: 100% !important;
 }
 
 .nav-link:hover {
@@ -74,6 +75,10 @@ body {
 
 /*=====================================================*/
 /* FOOTER SECTION */
+#footer {
+  width: 100% !important;
+}
+
 .card {
   background-color: rgba(0, 0, 0, 0.75) !important;
   border-radius: 0%;
