@@ -1,7 +1,8 @@
 /* MEDIA QUERIES */
-@media (min-width: 320px){
- nav .navbar-brand {
-   font-size: 72px !important;
+/* @media (max-width: 600px) and (min-width: 320px) {
+ nav .navbar-brand img {
+  width: 350px;
+  height: 150px;
  }
 
  .nav-item {
@@ -11,18 +12,20 @@
  .card-text {
    font-size: 38px !important;
  }
-}
+} */
 /*=====================================================*/
 /* Fonts */
 @font-face {
   font-family: myFirstFont;
-  src: url(sansation_light.woff);
+  src: url("./Dependencies/Fonts/Futura/Futura.ttc");
 }
 
 
 /*=====================================================*/
 /* Custom CSS */
 body {
+  font-family: "myFirstFont";
+  letter-spacing: 0.2px;
   /* padding-top: 60px; */
 }
 
