@@ -1,11 +1,26 @@
 /* MEDIA QUERIES */
-@media screen and (max-width: 480px) {
-  body {
-    font-size: 46px !important;
-  }
+@media (min-width: 320px){
+ nav .navbar-brand {
+   font-size: 72px !important;
+ }
+
+ .nav-item {
+   font-size: 46px !important;
+ }
+
+ .card-text {
+   font-size: 38px !important;
+ }
+}
+/*=====================================================*/
+/* Fonts */
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
 }
 
 
+/*=====================================================*/
 /* Custom CSS */
 body {
   /* padding-top: 60px; */
@@ -24,7 +39,7 @@ body {
   border: 1px solid red;
 }
 
-
+/*=====================================================*/
 /* HEADER SECTION */
 #header {
   background-color: rgba(0, 0, 0, 0.75);
@@ -34,6 +49,9 @@ body {
   color: white !important;
 }
 
+
+
+/*=====================================================*/
 /* PORTFOLIO SECTION */
 
 .img-col {
@@ -49,6 +67,9 @@ body {
   border-bottom: 1px solid white;
 }
 
+
+
+/*=====================================================*/
 /* FOOTER SECTION */
 .card {
   background-color: rgba(0, 0, 0, 0.75) !important;
@@ -101,6 +122,9 @@ body {
   text-decoration: none;
 }
 
+
+
+/*=====================================================*/
 /* ABOUT SECTION */
 #about {
   background-color:  rgba(0, 0, 0, 0.75);
