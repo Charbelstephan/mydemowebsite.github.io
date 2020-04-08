@@ -70,7 +70,6 @@ $("#portfolio").append(html);
 
 
 function getActiveNavItem(navItemClicked, navItemsClass) {
-    console.log(`${navItemClicked} - ${navItemsClass}`);
     $(navItemsClass).removeClass("active");
     $(navItemClicked).addClass("active");
 }
