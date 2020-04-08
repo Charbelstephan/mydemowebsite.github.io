@@ -1,18 +1,10 @@
 /* MEDIA QUERIES */
-/* @media (max-width: 600px) and (min-width: 320px) {
- nav .navbar-brand img {
-  width: 350px;
-  height: 150px;
- }
-
- .nav-item {
-   font-size: 46px !important;
- }
-
- .card-text {
-   font-size: 38px !important;
- }
-} */
+@media (max-width: 600px) and (min-width: 320px) {
+  .card {
+  border-top: 0.2px;
+  border-right: 0px;
+  }
+}
 /*=====================================================*/
 /* Fonts */
 @font-face {
@@ -27,8 +19,6 @@ body {
   font-family: "myFirstFont";
   letter-spacing: 0.2px;
   /* padding-top: 60px; */
-  
-  overflow-x:hidden;
 }
 
 .active {
@@ -69,12 +59,6 @@ body {
   height: 100%;
 }
 
-.card-body {
-  border-bottom: 1px solid white;
-}
-
-
-
 /*=====================================================*/
 /* FOOTER SECTION */
 #footer {
@@ -85,17 +69,11 @@ body {
   background-color: rgba(0, 0, 0, 0.75) !important;
   border-radius: 0%;
   border-top: 0px;
-  border-left: 0.2px;
   border-right: 0.2px;
-  border-bottom: 1px;
   border-color: white;
-  border-style: solid;
+  border-style: solid; 
   font-size: 12px;
   transition: 0.3s;
-}
-
-.card:first-child {
-  border-left: 0px;
 }
 
 .card:last-child {
@@ -108,8 +86,9 @@ body {
   transition: 0.3s;
 }
 
-.card-hr {
-    background-color: white;
+.border-splitter {
+    border-bottom: 0.2px solid white;
+    width: 100% !important;
 }
 
 .card-text {
