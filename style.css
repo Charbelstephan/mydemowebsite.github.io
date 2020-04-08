@@ -18,11 +18,12 @@
 body {
   font-family: "myFirstFont";
   letter-spacing: 0.2px;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .active {
-  border-bottom: 2px solid white;
+  text-decoration-line: underline;
+  text-underline-position: under;
   max-width: 100px;
 }
 

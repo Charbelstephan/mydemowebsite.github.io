@@ -1,20 +1,42 @@
 $(document).ready(function () {
 
-    $(".nav-item").click(function () {
-        $(".nav-item").removeClass("active");
-        $(this).addClass("active");
+    $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        } // End if
     });
 
     $("#makeup-nav").click(function () {
+        getActiveNavItem("#makeup-nav", ".nav-item");
         $(".content").addClass("hide-content");
         $("#portfolio").removeClass("hide-content");
     });
 
     $("#about-nav").click(function () {
+        getActiveNavItem("#about-nav", ".nav-item");
         $(".content").addClass("hide-content");
         $("#about").removeClass("hide-content");
     });
 
+    $("#contact-nav").click(function () {
+        getActiveNavItem("#contact-nav", ".nav-item");
+    });
 
 });
 
@@ -47,3 +69,8 @@ var html = templateScript(context);
 $("#portfolio").append(html);
 
 
+function getActiveNavItem(navItemClicked, navItemsClass) {
+    console.log(`${navItemClicked} - ${navItemsClass}`);
+    $(navItemsClass).removeClass("active");
+    $(navItemClicked).addClass("active");
+}
